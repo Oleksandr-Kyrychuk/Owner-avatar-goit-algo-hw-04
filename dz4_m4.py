@@ -48,11 +48,11 @@ def main():
         elif command == "change":
             result = change_contact(args, contacts)
             print(result)
-        elif command == "username":
+        elif command == "phone":
             if len(args) == 1:
                 print(phone_username(args[0], contacts))  
             else:
-                print("Usage: phone_username <username>")
+                print("Usage: phone username <username>")
         elif command == "all":
             print(all(contacts))
         else:
